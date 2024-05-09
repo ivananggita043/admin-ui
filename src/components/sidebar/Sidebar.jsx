@@ -6,7 +6,7 @@ import Inventory2Icon from '@mui/icons-material/Inventory2';
 import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
 import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon';
 import LogoutIcon from '@mui/icons-material/Logout';
-
+import CategoryIcon from "@mui/icons-material/Category";
 
 const Sidebar = () => {
   return (
@@ -41,6 +41,12 @@ const Sidebar = () => {
           <ShoppingCartCheckoutIcon className="icon"/>
           <span>Orders</span>
         </li>
+        <Link to="/category">
+        <li>
+          <CategoryIcon className="icon"/>
+          <span>Category</span>
+        </li>
+        </Link>
         <p className="title">USER</p>
         <li>
           <InsertEmoticonIcon className="icon"/>
