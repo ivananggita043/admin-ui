@@ -1,16 +1,13 @@
-import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { initializeApp } from "firebase/app";
 
-// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_FIREBASE_KEY,
-  authDomain: "store-tutor.firebaseapp.com",
-  projectId: "store-tutor",
-  storageBucket: "store-tutor.appspot.com",
-  messagingSenderId: "1005990988819",
-  appId: "1:1005990988819:web:3b74aeb1c59fe64573c3e6"
+  apiKey: "AIzaSyATVpMHGT9Ci5hL9kZSj5Tng_PFPgHQ90Y",
+  authDomain: "store-tutor-7c782.firebaseapp.com",
+  projectId: "store-tutor-7c782",
+  storageBucket: "store-tutor-7c782.appspot.com",
+  messagingSenderId: "390110959294",
+  appId: "1:390110959294:web:af201a7515da89107bf0ef"
 };
 
 // Initialize Firebase
