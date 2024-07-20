@@ -1,12 +1,11 @@
 import "./datatable.scss";
 import { DataGrid } from "@mui/x-data-grid";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom"
 import { useEffect, useState } from "react";
 import { collection, onSnapshot, deleteDoc, doc } from "firebase/firestore";
 import { db } from "../../firebase";
 
-
-const Datatable = ({columns}) => {
+const Datatable = ({ columns }) => {
   const location = useLocation();
   const type = location.pathname.split('/')[1];
 
@@ -26,11 +25,11 @@ const Datatable = ({columns}) => {
         console.log(error);
       }
     );
-  
+
     return () => {
       unsub();
     };
-  }, [type]); 
+  }, [type]);
 
   const handleDelete = async (id) => {
     try {
@@ -88,5 +87,4 @@ const Datatable = ({columns}) => {
     </div>
   );
 };
-
 export default Datatable;
